@@ -5,8 +5,19 @@ const planejamentoConcluido = true;
 const estaSol = true;
 const todosEstaoBem = true;
 
-const temPicnic = planejamentoConcluido && estaSol && todosEstaoBem; // AND - E
-console.log('Vamos fazer um picnic?', temPicnic);
+const temPicnic = planejamentoConcluido && estaSol && todosEstaoBem; // AND - Econst temPicnic === tru
+
+function perfeito() {
+    if(temPicnic) {
+        let tem = "sim";
+        return tem;
+    }  
+    return "nao"
+}
+console.log(perfeito())
+
+
+console.log('Vamos fazer um picnic?', perfeito());
 
 // OR
 const estudei = true;
